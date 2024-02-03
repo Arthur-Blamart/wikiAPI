@@ -1,3 +1,7 @@
 from include import *
 
-res = getPage('Linusfeffe')
+res = getPage('Linus Torvalds')
+
+res = (getLinked(res))
+
+print(res[0])
