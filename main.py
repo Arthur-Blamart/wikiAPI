@@ -1,7 +1,10 @@
 from include import *
 
-res = getPage('Linus Torvalds')
+Linus = getPage('Linus Torvalds')
+toFind = getPage('Lybie')
 
-res = (getLinked(res))
+print(getLinked(getLinked(Linus)[0])[0])
 
-print(res[0])
+prof = howLongFromAToB(Linus, toFind, 5)
+
+print(prof)
